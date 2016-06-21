@@ -1,7 +1,7 @@
 import * as Redux from 'redux';
 import Issues from './modules/issues.js';
 
-cosnt initialState = [
+const initialState = [
     {
         id: 'S1',
         suammmry: 'test issue 1'
