@@ -1,14 +1,16 @@
 import * as Redux from 'redux';
-import Issues from './modules/issues.js';
+import { reducer } from './modules/issues.js';
 
 const initialState = [
     {
         id: 'S1',
-        suammmry: 'test issue 1'
+        summary: 'test issue 1'
     }
 ]
 
-export default const store = Redux.createStore(
-    Issues,
+const store = Redux.createStore(
+    reducer,
     initialState
 )
+
+export default store;
